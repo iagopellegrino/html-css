@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Videos hospedados localmente</h1>  <!--Tomar muito cuidado com arquivos de midia hospedados no próprio site, pois, dependendo do quantidade de pessoas que utilizarem o arquivo de midia, irá gerar uma alta quantidade de fluxo de banda ocasionando em uma cobrança maior do que o esperado pelo provedor-->
+    <p>Este video esta hospedado no meu próprio servidor</p>
+    <video width="560" poster="imagens/limoes-capa.png" controls>
+        <source src="midia/meu-video.m4v" type="video/mp4">
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <source src="midia/meu-video.webm" type="video/webm">
+        <source src="midia/meu-video.ogv" type="video/ogv">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+
+    <h1>Inserindo videos do YouTube</h1>  <!--Dar preferência para utilizar vídeos do YouTube, uma vez que, incorporados os video no seu site, o consumo de banda será nos servidores do próprio YouTube, ou seja, sem consumo adicional no seu site.-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3YScGZy3wVs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

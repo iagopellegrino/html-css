@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">  <!--Linha de código para tentar abrir uma imagem, caso a resolução máxima do dispositvo ou navegador seja inferior a 750 px-->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">  <!--Linha de código para abrir uma imagem, caso a resolução máxima esteja entre 750 - 1050 px-->
+        <img src="imagens/foto-g.png" alt="Imagem Flexível">  <!--Imagem que será aberta, caso a resolução do dispositivo ou navegador seja superior a 1050 px-->
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML 5</p>  <!--Formatos padrões para áudios MP3, WAV, OGG-->
+    <audio src="midia/happy-mistake.mp3" controls loop></audio>
+    <br>
+    <audio preload="metadata" controls>  <!--'Metadata' carrega poucas informações, 'None' não carrega nada e 'Auto' carrega o arquivo inteiro, porém, o site só abre depois do arquivo em áudio ser carregado por completo.-->
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo .MP3</a></p>
+    </audio>
+</body>
+</html>
